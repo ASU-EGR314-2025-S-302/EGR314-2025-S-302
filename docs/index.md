@@ -13,7 +13,7 @@ Welcome to our exhibit's website. Here you'll be able to see what we have been w
 ------------|-----------------------
 Jack Francis | [Motor Driver/Actuator](https://jmfran17.github.io/Jack_Datasheet.github.io/)
 Shane Duttenhefner | [OLED Display](https://shaneduttenhefner.github.io/)
-Luke Jeffs | [Pressure Sensor](put link here)
+Luke Jeffs | [Pressure Sensor](https://lukedjeffs.github.io/LukeDJ.github.io/)
 
 
 - Date Started: 1/17/2025
