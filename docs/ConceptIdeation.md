@@ -19,6 +19,8 @@ Our top two ideas detailed in this organization were the guitar tuner and decibe
 
 ![postorg](https://github.com/user-attachments/assets/6809dc59-942e-423f-a961-afba44e6bc2e)
 
+We originally threw random ideas at the wall without considering too much if they were in the scope of this class or exemplifying a certain STEM principle, but as the process went on we were able to hone in on a some relevant ideas. As we approached a sufficient amount of sticky notes, we began grouping them by what would fit into a holistic design rather than just keeping them as singular ideas. From this came more thoughtful and fleshed out ideas. Although a lot of the ideas themselves were fun, we found it hard to find a whole concept within our sticky notes that would be interesting design wise as well as explicitly lay out a STEM principle. From this we decided to rank them both by design criteria as well as functionality as a science exhibit exemplifying a certain STEM principle.
+
 ## Concept Sketch
 
 ![12345](https://github.com/user-attachments/assets/7ad2168a-5f5a-40d9-9a41-f9579b61736d)
