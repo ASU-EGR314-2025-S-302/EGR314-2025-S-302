@@ -20,8 +20,8 @@ This diagram defines further the flow of the game, from the start where the sens
 
 ## Messaging Structure
 
-![one](https://github.com/user-attachments/assets/5747d8c7-5825-4226-8d9b-f47d46d050e7)
+![image](https://github.com/user-attachments/assets/e47349ef-a0b7-4d5d-867e-13db9aa5c6fc)
 
-![two](https://github.com/user-attachments/assets/7c5601f4-95c1-4e4a-a815-621dbcf16888)
+![image](https://github.com/user-attachments/assets/27645b71-d654-49da-a35d-4ef0720b03cc)
 
 These are the messages that will be sent across UART and the daisy chain to each individual subsystem, defined by number and their content. There are multiple types of messages, including the variable pressure sensor value which is designated to 16 bits, then static values indicating a singular state which are only designated to 8 bits. These are the messages that will be sent in the process represented by the communication diagram above.
