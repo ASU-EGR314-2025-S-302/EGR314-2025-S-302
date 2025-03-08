@@ -15,6 +15,12 @@ Jack Francis | [Motor Driver/Actuator](https://jmfran17.github.io/Jack_Datasheet
 Shane Duttenhefner | [OLED Display](https://shaneduttenhefner.github.io/)
 Luke Jeffs | [Pressure Sensor](https://lukedjeffs.github.io/LukeDJ.github.io/)
 
+## Content On this Website
+**Page** | **Link**
+---------|---------
+Team Organization | [link](https://asu-egr314-2025-s-302.github.io/EGR314-2025-S-302/charts/)
+Ideation | [link](https://asu-egr314-2025-s-302.github.io/EGR314-2025-S-302/ConceptIdeation/)
+Block Diagram | [link](https://asu-egr314-2025-s-302.github.io/EGR314-2025-S-302/Block%20Diagram/)
 
 - Date Started: 1/17/2025
 
