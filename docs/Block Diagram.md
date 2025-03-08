@@ -14,7 +14,7 @@ This block diagram defines the general flow of data throughout the subsystem, wh
 
 ## Communication Process Diagram
 
-![Sequence Diagram of Team Communication drawio](https://github.com/user-attachments/assets/0f1df4b9-7852-4607-a811-f4be9948c96e)
+![Sequence Diagram of Team Communication drawio(1)](https://github.com/user-attachments/assets/46d3d484-d8a0-4124-8b83-c66cdafac202)
 
 This diagram defines further the flow of the game, from the start where the sensor system is turned on, all the way to when the pushbutton activates the victory screen and restarts the game. The looping lines reflect the daisy chain connections, as Luke's messages go to Shane's then go to Jack's and then loop back around (if necessary). The initial commands set up the game while the looped commands represent actual game play.
 
