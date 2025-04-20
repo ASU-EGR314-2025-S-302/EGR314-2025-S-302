@@ -12,6 +12,12 @@ tags:
 
 This block diagram defines the general flow of data throughout the subsystem, where the 12V power supply and UART reception and tramissions flow all throughout the daisy chain providing each subsystem with sufficient power and sufficient data. The system starts with the sensor, as it is the subsystem that holds the 12 volt power supply and sends it throughout the daisy chain. It sends the initial data as well, which transports to the OLED subsystem, then to the actuator subsystem, then back, so that each subsystem has access to messages, even if certain messages will only effect some. The OLED will display the actual pressure and target pressure as well as the victory screen when the game is won. The sensor subsystem will include a pressure sensor which communicates pressure back to the OLED subsystem which also uses LEDs to notify the user whether the game is off, on, or won. The motor driver subsystem has a pushbutton which will function as the game's victory button, which will flash the sensor subsystem's green LED and create a victory screen on the OLED.
 
+## Block Diagram 2
+
+(insert diagram 2)
+
+Due to team complications involving the loss of a member, the block diagram has been simplified to only 2 subsystems. Shane's subsystem will supply 12V power both of the subsystems through pin 1 of the daisy chain. Pin 2 of the daisy chain will be for the RX/TX signals. Shane's output TX signal to Jack's input RX signal and Jack's output TX signal to Shane's input RX signal. The game now starts with the OLED subsystem, where one of the two pushbuttons initialize the game. The screen will display the input pressure and the goal pressure. Input pressure is changed when the user pushes one of the two pushbuttons, one decreasing and one increasing. When the goal pressure is reached, the actuator will receive the data that it has been reached and will move and send the data that the actuator has been moved back to the OLED in order to change target pressure to a different value. When the game has been won, the green LED on Shane's subsystem will flash green and the game will restart.
+
 ## Communication Process Diagram
 
 ![Sequence Diagram of Team Communication drawio(1)](https://github.com/user-attachments/assets/46d3d484-d8a0-4124-8b83-c66cdafac202)
@@ -20,8 +26,13 @@ This diagram defines further the flow of the game, from the start where the sens
 
 ## Messaging Structure
 
-![image](https://github.com/user-attachments/assets/e47349ef-a0b7-4d5d-867e-13db9aa5c6fc)
+| Byte | Function |
+|----|-------|
+| AZ | Start |
+| YB | Stop  |
 
-![image](https://github.com/user-attachments/assets/27645b71-d654-49da-a35d-4ef0720b03cc)
-
-These are the messages that will be sent across UART and the daisy chain to each individual subsystem, defined by number and their content. There are multiple types of messages, including the variable pressure sensor value which is designated to 16 bits, then static values indicating a singular state which are only designated to 8 bits. These are the messages that will be sent in the process represented by the communication diagram above.
+| Team Members | Team IDs |
+|--------------|----------|
+| Jack Francis | J |
+| Shane Duttenhefner | S |
+| Broadcast | X |
