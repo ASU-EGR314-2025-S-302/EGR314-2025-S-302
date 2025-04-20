@@ -36,3 +36,38 @@ This diagram defines further the flow of the game, from the start where the sens
 | Jack Francis | J |
 | Shane Duttenhefner | S |
 | Broadcast | X |
+
+| Message Type | Description |
+|--------------|----------|
+| 1. Start game | 1 byte for communicating 'on' state to both systems|
+| 2. Extend actuator | 1 byte for actuator extension |
+| 3. Change target value | 1 byte to change target value |
+| 4. Stop game | 1 byte to enable victory screen and reset game |
+
+## Message Type 1
+
+| Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
+|---------|------------------|---------------|-----------|-----------|---------|
+| 1       | messagetypeone   | char          | 1         | 1         | 1       |
+| 1       | startgame        | char          | 1         | 1         | 1       |
+
+## Message Type 2
+
+| Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
+|---------|------------------|---------------|-----------|-----------|---------|
+| 1       | messagetypetwo   | char          | 2         | 2         | 2       |
+| 1       | extendactuator   | char          | 0         | 1         | 1       |
+
+## Message Type 3
+
+| Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
+|---------|------------------|---------------|-----------|-----------|---------|
+| 1       | messagetypethree | char          | 3         | 3         | 3       |
+| 1       | changevalue      | char          | 0         | 1         | 1       |
+
+## Message Type 4
+
+| Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
+|---------|------------------|---------------|-----------|-----------|---------|
+| 1       | messagetypefour  | char          | 4         | 4         | 4       |
+| 1       | stopgame         | char          | 1         | 1         | 1       |
