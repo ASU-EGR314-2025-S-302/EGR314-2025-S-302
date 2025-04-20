@@ -431,6 +431,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#message-type-1" class="md-nav__link">
+    Message Type 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-type-2" class="md-nav__link">
+    Message Type 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-type-3" class="md-nav__link">
+    Message Type 3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-type-4" class="md-nav__link">
+    Message Type 4
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -572,6 +600,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#message-type-1" class="md-nav__link">
+    Message Type 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-type-2" class="md-nav__link">
+    Message Type 2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-type-3" class="md-nav__link">
+    Message Type 3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-type-4" class="md-nav__link">
+    Message Type 4
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -644,6 +700,156 @@
 <tr>
 <td>Broadcast</td>
 <td>X</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Message Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Start game</td>
+<td>1 byte for communicating 'on' state to both systems</td>
+</tr>
+<tr>
+<td>2. Extend actuator</td>
+<td>1 byte for actuator extension</td>
+</tr>
+<tr>
+<td>3. Change target value</td>
+<td>1 byte to change target value</td>
+</tr>
+<tr>
+<td>4. Stop game</td>
+<td>1 byte to enable victory screen and reset game</td>
+</tr>
+</tbody>
+</table>
+<h2 id="message-type-1">Message Type 1</h2>
+<table>
+<thead>
+<tr>
+<th>Byte(s)</th>
+<th>Variable Name</th>
+<th>Variable Type</th>
+<th>Min Value</th>
+<th>Max Value</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>messagetypeone</td>
+<td>char</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>startgame</td>
+<td>char</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="message-type-2">Message Type 2</h2>
+<table>
+<thead>
+<tr>
+<th>Byte(s)</th>
+<th>Variable Name</th>
+<th>Variable Type</th>
+<th>Min Value</th>
+<th>Max Value</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>messagetypetwo</td>
+<td>char</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>extendactuator</td>
+<td>char</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="message-type-3">Message Type 3</h2>
+<table>
+<thead>
+<tr>
+<th>Byte(s)</th>
+<th>Variable Name</th>
+<th>Variable Type</th>
+<th>Min Value</th>
+<th>Max Value</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>messagetypethree</td>
+<td>char</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr>
+<td>1</td>
+<td>changevalue</td>
+<td>char</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="message-type-4">Message Type 4</h2>
+<table>
+<thead>
+<tr>
+<th>Byte(s)</th>
+<th>Variable Name</th>
+<th>Variable Type</th>
+<th>Min Value</th>
+<th>Max Value</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>messagetypefour</td>
+<td>char</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>1</td>
+<td>stopgame</td>
+<td>char</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
 </tr>
 </tbody>
 </table>
