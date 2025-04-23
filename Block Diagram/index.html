@@ -746,6 +746,7 @@
 </tbody>
 </table>
 <h2 id="message-type-1">Message Type 1</h2>
+<p>This message will be sent from Shane to Jack when a pushbutton is pressed as an indicator that game has started.</p>
 <table>
 <thead>
 <tr>
@@ -767,7 +768,7 @@
 <td>1</td>
 </tr>
 <tr>
-<td>1</td>
+<td>2</td>
 <td>startgame</td>
 <td>char</td>
 <td>1</td>
@@ -777,6 +778,7 @@
 </tbody>
 </table>
 <h2 id="message-type-2">Message Type 2</h2>
+<p>This message will be sent from Shane to Jack when the interface's input number reaches the goal number in order to extend the actuator.</p>
 <table>
 <thead>
 <tr>
@@ -798,7 +800,7 @@
 <td>2</td>
 </tr>
 <tr>
-<td>1</td>
+<td>2</td>
 <td>extendactuator</td>
 <td>char</td>
 <td>0</td>
@@ -808,6 +810,7 @@
 </tbody>
 </table>
 <h2 id="message-type-3">Message Type 3</h2>
+<p>After the actuator is extended, this message will be be sent to Shane from Jack a few seconds after receiving message type 2 so he can change to a new goal number.</p>
 <table>
 <thead>
 <tr>
@@ -829,7 +832,7 @@
 <td>3</td>
 </tr>
 <tr>
-<td>1</td>
+<td>2</td>
 <td>changevalue</td>
 <td>char</td>
 <td>0</td>
@@ -839,6 +842,7 @@
 </tbody>
 </table>
 <h2 id="message-type-4">Message Type 4</h2>
+<p>This message will be sent to Shane after Jack's actuator pushes the victory button which will display a victory screen and reset the game.</p>
 <table>
 <thead>
 <tr>
@@ -860,7 +864,7 @@
 <td>4</td>
 </tr>
 <tr>
-<td>1</td>
+<td>2</td>
 <td>stopgame</td>
 <td>char</td>
 <td>1</td>
