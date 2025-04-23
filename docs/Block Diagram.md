@@ -28,6 +28,7 @@ This diagram defines further the flow of the game, from the start where the sens
 
 ![Sequence Diagram of Team Communication Version 2 drawio](https://github.com/user-attachments/assets/04604270-66cf-454e-8033-b0db7ce3deda)
 
+With the recent team changes, we’ve updated our communication diagram to best represent how our board communicates to each other. The diagram now starts with the user interacting with push buttons on Shane’s board and then sending a message to Jack to start the game. After that, our boards continue to send messages telling the other to either extend the actuator based on the user’s inputs or update the goal on the display. Once the final push button is hit by the actuator, a final message will be sent from Jack to Shane telling the boards that the game is over and to display the win screen.
 
 ## Messaging Structure
 
