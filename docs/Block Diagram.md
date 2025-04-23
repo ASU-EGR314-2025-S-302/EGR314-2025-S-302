@@ -32,16 +32,22 @@ With the recent team changes, we’ve updated our communication diagram to best 
 
 ## Messaging Structure
 
+# Prefix and Suffix
+
 | Byte | Function |
 |----|-------|
 | AZ | Start |
 | YB | Stop  |
+
+# Message IDs
 
 | Team Members | Team IDs |
 |--------------|----------|
 | Jack Francis | J |
 | Shane Duttenhefner | S |
 | Broadcast | X |
+
+# Message Types
 
 | Message Type | Description |
 |--------------|----------|
