@@ -57,7 +57,7 @@ This message will be sent from Shane to Jack when a pushbutton is pressed as an 
 | Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
 |---------|------------------|---------------|-----------|-----------|---------|
 | 1       | messagetypeone   | char          | 1         | 1         | 1       |
-| 2       | startgame        | char          | 1         | 1         | 1       |
+| 2       | startgame        | char          | 0         | 1         | 1       |
 
 ## Message Type 2
 
@@ -84,4 +84,4 @@ This message will be sent to Shane after Jack's actuator pushes the victory butt
 | Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
 |---------|------------------|---------------|-----------|-----------|---------|
 | 1       | messagetypefour  | char          | 4         | 4         | 4       |
-| 2       | stopgame         | char          | 1         | 1         | 1       |
+| 2       | stopgame         | char          | 0         | 1         | 1       |
