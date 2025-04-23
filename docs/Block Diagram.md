@@ -51,28 +51,36 @@ This diagram defines further the flow of the game, from the start where the sens
 
 ## Message Type 1
 
+This message will be sent from Shane to Jack when a pushbutton is pressed as an indicator that game has started.
+
 | Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
 |---------|------------------|---------------|-----------|-----------|---------|
 | 1       | messagetypeone   | char          | 1         | 1         | 1       |
-| 1       | startgame        | char          | 1         | 1         | 1       |
+| 2       | startgame        | char          | 1         | 1         | 1       |
 
 ## Message Type 2
+
+This message will be sent from Shane to Jack when the interface's input number reaches the goal number in order to extend the actuator.
 
 | Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
 |---------|------------------|---------------|-----------|-----------|---------|
 | 1       | messagetypetwo   | char          | 2         | 2         | 2       |
-| 1       | extendactuator   | char          | 0         | 1         | 1       |
+| 2       | extendactuator   | char          | 0         | 1         | 1       |
 
 ## Message Type 3
+
+After the actuator is extended, this message will be be sent to Shane from Jack a few seconds after receiving message type 2 so he can change to a new goal number.
 
 | Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
 |---------|------------------|---------------|-----------|-----------|---------|
 | 1       | messagetypethree | char          | 3         | 3         | 3       |
-| 1       | changevalue      | char          | 0         | 1         | 1       |
+| 2       | changevalue      | char          | 0         | 1         | 1       |
 
 ## Message Type 4
+
+This message will be sent to Shane after Jack's actuator pushes the victory button which will display a victory screen and reset the game.
 
 | Byte(s) | Variable Name    | Variable Type | Min Value | Max Value | Example |
 |---------|------------------|---------------|-----------|-----------|---------|
 | 1       | messagetypefour  | char          | 4         | 4         | 4       |
-| 1       | stopgame         | char          | 1         | 1         | 1       |
+| 2       | stopgame         | char          | 1         | 1         | 1       |
