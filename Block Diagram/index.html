@@ -418,8 +418,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#communication-process-diagram" class="md-nav__link">
-    Communication Process Diagram
+  <a href="#communication-process-diagram-1" class="md-nav__link">
+    Communication Process Diagram 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-process-diagram-2" class="md-nav__link">
+    Communication Process Diagram 2
   </a>
   
 </li>
@@ -587,8 +594,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#communication-process-diagram" class="md-nav__link">
-    Communication Process Diagram
+  <a href="#communication-process-diagram-1" class="md-nav__link">
+    Communication Process Diagram 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-process-diagram-2" class="md-nav__link">
+    Communication Process Diagram 2
   </a>
   
 </li>
@@ -659,9 +673,11 @@
 <h2 id="block-diagram-2">Block Diagram 2</h2>
 <p><a class="glightbox" href="https://github.com/user-attachments/assets/d6e47f94-231a-4d55-a046-69b31c67baba" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Block2 drawio" src="https://github.com/user-attachments/assets/d6e47f94-231a-4d55-a046-69b31c67baba" /></a></p>
 <p>Due to team complications involving the loss of a member, the block diagram has been simplified to only 2 subsystems. Shane's subsystem will supply 12V power both of the subsystems through pin 1 of the daisy chain. Pin 2 of the daisy chain will be for the RX/TX signals. Shane's output TX signal to Jack's input RX signal and Jack's output TX signal to Shane's input RX signal. The game now starts with the OLED subsystem, where one of the two pushbuttons initialize the game. The screen will display the input pressure and the goal pressure. Input pressure is changed when the user pushes one of the two pushbuttons, one decreasing and one increasing. When the goal pressure is reached, the actuator will receive the data that it has been reached and will move and send the data that the actuator has been moved back to the OLED in order to change target pressure to a different value. When the game has been won, the green LED on Shane's subsystem will flash green and the game will restart.</p>
-<h2 id="communication-process-diagram">Communication Process Diagram</h2>
+<h2 id="communication-process-diagram-1">Communication Process Diagram 1</h2>
 <p><a class="glightbox" href="https://github.com/user-attachments/assets/46d3d484-d8a0-4124-8b83-c66cdafac202" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sequence Diagram of Team Communication drawio(1)" src="https://github.com/user-attachments/assets/46d3d484-d8a0-4124-8b83-c66cdafac202" /></a></p>
 <p>This diagram defines further the flow of the game, from the start where the sensor system is turned on, all the way to when the pushbutton activates the victory screen and restarts the game. The looping lines reflect the daisy chain connections, as Luke's messages go to Shane's then go to Jack's and then loop back around (if necessary). The initial commands set up the game while the looped commands represent actual game play.</p>
+<h2 id="communication-process-diagram-2">Communication Process Diagram 2</h2>
+<p><a class="glightbox" href="https://github.com/user-attachments/assets/04604270-66cf-454e-8033-b0db7ce3deda" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sequence Diagram of Team Communication Version 2 drawio" src="https://github.com/user-attachments/assets/04604270-66cf-454e-8033-b0db7ce3deda" /></a></p>
 <h2 id="messaging-structure">Messaging Structure</h2>
 <table>
 <thead>
