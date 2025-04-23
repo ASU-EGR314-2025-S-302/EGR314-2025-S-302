@@ -678,6 +678,7 @@
 <p>This diagram defines further the flow of the game, from the start where the sensor system is turned on, all the way to when the pushbutton activates the victory screen and restarts the game. The looping lines reflect the daisy chain connections, as Luke's messages go to Shane's then go to Jack's and then loop back around (if necessary). The initial commands set up the game while the looped commands represent actual game play.</p>
 <h2 id="communication-process-diagram-2">Communication Process Diagram 2</h2>
 <p><a class="glightbox" href="https://github.com/user-attachments/assets/04604270-66cf-454e-8033-b0db7ce3deda" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sequence Diagram of Team Communication Version 2 drawio" src="https://github.com/user-attachments/assets/04604270-66cf-454e-8033-b0db7ce3deda" /></a></p>
+<p>With the recent team changes, we’ve updated our communication diagram to best represent how our board communicates to each other. The diagram now starts with the user interacting with push buttons on Shane’s board and then sending a message to Jack to start the game. After that, our boards continue to send messages telling the other to either extend the actuator based on the user’s inputs or update the goal on the display. Once the final push button is hit by the actuator, a final message will be sent from Jack to Shane telling the boards that the game is over and to display the win screen.</p>
 <h2 id="messaging-structure">Messaging Structure</h2>
 <table>
 <thead>
