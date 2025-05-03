@@ -12,19 +12,13 @@ tags:
 
 This block diagram defines the general flow of data throughout the subsystem, where the 12V power supply and UART reception and tramissions flow all throughout the daisy chain providing each subsystem with sufficient power and sufficient data. The system starts with the sensor, as it is the subsystem that holds the 12 volt power supply and sends it throughout the daisy chain. It sends the initial data as well, which transports to the OLED subsystem, then to the actuator subsystem, then back, so that each subsystem has access to messages, even if certain messages will only effect some. The OLED will display the actual pressure and target pressure as well as the victory screen when the game is won. The sensor subsystem will include a pressure sensor which communicates pressure back to the OLED subsystem which also uses LEDs to notify the user whether the game is off, on, or won. The motor driver subsystem has a pushbutton which will function as the game's victory button, which will flash the sensor subsystem's green LED and create a victory screen on the OLED.
 
-## Block Diagram 2
+## Block Diagram V2
 
 ![Block2 drawio](https://github.com/user-attachments/assets/d6e47f94-231a-4d55-a046-69b31c67baba)
 
-Due to team complications involving the loss of a member, the block diagram has been simplified to only 2 subsystems. Shane's subsystem will supply 12V power both of the subsystems through pin 1 of the daisy chain. Pin 2 of the daisy chain will be for the RX/TX signals. Shane's output TX signal to Jack's input RX signal and Jack's output TX signal to Shane's input RX signal. The game now starts with the OLED subsystem, where one of the two pushbuttons initialize the game. The screen will display the input pressure and the goal pressure. Input pressure is changed when the user pushes one of the two pushbuttons, one decreasing and one increasing. When the goal pressure is reached, the actuator will receive the data that it has been reached and will move and send the data that the actuator has been moved back to the OLED in order to change target pressure to a different value. When the game has been won, the green LED on Shane's subsystem will flash green and the game will restart.
+Due to team complications involving the loss of a member, the block diagram has been simplified to only 2 subsystems. The original block diagram had 3 subsystems, the third including a pressure sensor that was intended to send pressure values to Jack and Shane's subsystems. Version 1 of the block diagram can be found in the appendix tab. In this updated block diagram, Shane's subsystem will supply 12V power both of the subsystems through pin 1 of the daisy chain. Pin 2 of the daisy chain will be for the RX/TX signals. Shane's output TX signal to Jack's input RX signal and Jack's output TX signal to Shane's input RX signal. The game now starts with the OLED subsystem, where one of the two pushbuttons initialize the game. The screen will display the input pressure and the goal pressure. Input pressure is changed when the user pushes one of the two pushbuttons, one decreasing and one increasing. When the goal pressure is reached, the actuator will receive the data that it has been reached and will move and send the data that the actuator has been moved back to the OLED in order to change target pressure to a different value. When the game has been won, the green LED on Shane's subsystem will flash green and the game will restart.
 
-## Communication Process Diagram 1
-
-![Sequence Diagram of Team Communication drawio(1)](https://github.com/user-attachments/assets/46d3d484-d8a0-4124-8b83-c66cdafac202)
-
-This diagram defines further the flow of the game, from the start where the sensor system is turned on, all the way to when the pushbutton activates the victory screen and restarts the game. The looping lines reflect the daisy chain connections, as Luke's messages go to Shane's then go to Jack's and then loop back around (if necessary). The initial commands set up the game while the looped commands represent actual game play.
-
-## Communication Process Diagram 2
+## Communication Process Diagram V2
 
 ![Sequence Diagram of Team Communication Version 2 drawio](https://github.com/user-attachments/assets/04604270-66cf-454e-8033-b0db7ce3deda)
 
@@ -49,12 +43,12 @@ With the recent team changes, we’ve updated our communication diagram to best 
 
 ## Message Types
 
-| Message Type | Description |
-|--------------|----------|
-| 1. Start game | 1 byte for communicating 'on' state to both systems|
-| 2. Extend actuator | 1 byte for actuator extension |
-| 3. Change target value | 1 byte to change target value |
-| 4. Stop game | 1 byte to enable victory screen and reset game |
+| Message Type          | Message ID (char) | Jack Francis (J)                          | Shane Duttenhefner (S)                |
+|-----------------------|------------|-------------------------------------------|----------------------------------------------|
+| Start game            | 1          | R (LED turns on when message arrives)     | S (pushbutton press triggers send of b'1')   |
+| Extend actuator       | 2          | R (actuator extends; verify motion)       | S (interface reaches goal → send b'1')       |
+| Change target value   | 3          | S (Delay after extension → send b'1')    | R (HMI displays new target value)            |
+| Stop game             | 4          | S (victory button press sends b'1')           | R (HMI shows victory screen and resets game) |
 
 ## Message Type 1
 
