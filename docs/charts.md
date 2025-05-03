@@ -9,7 +9,7 @@ tags:
 >To work as a team and design a set of individual circuit boards that can communicate with each other via UART to create a museum-like exhibit that a user can interact with.
 
 ##Product Mission Statement
->To provide a simple and fun game for students in grades K-12 that demonstrates the STEM principle that the pressure of a substance is inversely proportional to the volume.
+>To provide a simple and fun game for students in grades K-6 that demonstrates how hardware can be used to interact with digital systems.
 
 
 ##Communication
@@ -20,7 +20,6 @@ tags:
 ---------|--------------------------------|---------------------------------|-------------------------------
 Jack Francis | Text | Google Meet | Discord
 Shane Duttenhefner | Text | Discord | Google Meet
-Luke Jeffs | Text | Discord | Google Meet
 
 ###Communication Procedure
 
