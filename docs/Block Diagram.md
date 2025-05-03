@@ -11,11 +11,17 @@ tags:
 
 Due to team complications involving the loss of a member, the block diagram has been simplified to only 2 subsystems. The original block diagram had 3 subsystems, the third including a pressure sensor that was intended to send pressure values to Jack and Shane's subsystems. Version 1 of the block diagram can be found in the appendix tab. In this updated block diagram, Shane's subsystem will supply 12V power both of the subsystems through pin 1 of the daisy chain. Pin 2 of the daisy chain will be for the RX/TX signals. Shane's output TX signal to Jack's input RX signal and Jack's output TX signal to Shane's input RX signal. The game now starts with the OLED subsystem, where one of the two pushbuttons initialize the game. The screen will display the input pressure and the goal pressure. Input pressure is changed when the user pushes one of the two pushbuttons, one decreasing and one increasing. When the goal pressure is reached, the actuator will receive the data that it has been reached and will move and send the data that the actuator has been moved back to the OLED in order to change target pressure to a different value. When the game has been won, the green LED on Shane's subsystem will flash green and the game will restart.
 
+### Decision Making
+
+The block diagram came together originally by putting together the block diagrams constructed on our individual datasheets, but with some of the extra details reserved just for the individual block diagrams in order to be less cluttered. The block diagram features the necessary functionalities (OLED, HMI, and Actuator) for the system to work and the 8 pin ribbon cable where power and commands are shared.
+
 ## Communication Process Diagram V2
 
 ![Sequence Diagram of Team Communication Version 2 drawio](https://github.com/user-attachments/assets/04604270-66cf-454e-8033-b0db7ce3deda)
 
-With the recent team changes, we’ve updated our communication diagram to best represent how our board communicates to each other. The diagram now starts with the user interacting with push buttons on Shane’s board and then sending a message to Jack to start the game. After that, our boards continue to send messages telling the other to either extend the actuator based on the user’s inputs or update the goal on the display. Once the final push button is hit by the actuator, a final message will be sent from Jack to Shane telling the boards that the game is over and to display the win screen.
+### Functionality
+
+With the recent team changes, we’ve updated our communication diagram to best represent how our board communicates to each other. The user will pick up the game controller that has the OLED display and pushbuttons. Pushing either of the pushbuttons while the OLED is on the start screen will start the game, which will initialize the timer on the actuator, and the OLED will display a randomized target value to the user, along with the current value the user is inputting. When the user pushes the buttons, the input value will go up or down. When the input value hasn't reached the goal value, Shane's subsystem will tell Jack's subsystem to not engage the actuator. When the input value reaches the goal value, Shane's subsystem will send a message to Jack to extend the actuator. After a second of actuator extension, it will stop and a message will be sent to Shane to change the target value, which will display as a new number on Shane's screen. When the actuator has extended far enough, it'll hit a pushbutton on Jack's subsystem, communicating to Shane to display a victory screen and the entire game will reset to the start screen.
 
 # Messaging Structure
 
@@ -78,3 +84,17 @@ This message will be sent to Shane after Jack's actuator pushes the victory butt
 |---------|------------------|---------------|-----------|-----------|---------|
 | 1       | messagetypefour  | char          | 4         | 4         | 4       |
 | 2       | stopgame         | char          | 0         | 1         | 1       |
+
+For designing the message structure, we decided to keep the messages simple as to not create unknown communication errors. Most of the communication was turned into 0s and 1s and the more complex math was kept self contained within each subsystem, with the 1s and 0s triggering the process that causes the complex math within a system (for example, instead of the actuator sending a specific pressure value, it will send a 1 to the OLED, which will generate a random number to be the next value). The communication difficulties with previous iterations using more complex variables caused us to move simplify it for more effective communication.
+
+# Top 5 Biggest Software Changes
+
+### 1. Payload Values
+
+Originally, we were going to send over a float that would represent the pressure values being sent over. This became strange, floats were hard to send over serial, even with the struct function. Because of this, we switched over to sending multiple characters but using 0s to pad out the bytes. As our team changed, so did our design and software and it was changed to simple 1 byte 0s and 1s.
+
+### 2. Message Types
+
+There were originally an abundance of message types that would've been sent across the system, many of which did not make it into the final design. There were error messages, status messages, pressure messages, actuator state messages, and so on. As we learned more about board communication, we saw that many of these messages weren't necessary for system functionality. It was then turned into 4 messages to remove the clutter from the message cache to only send data relevant for each system.
+
+### 3. Shane Start
