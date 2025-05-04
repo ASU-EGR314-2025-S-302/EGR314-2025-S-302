@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+         <loc>https://embedded-systems-design.github.io/template_report/</loc>
+         <lastmod>2025-05-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://embedded-systems-design.github.io/template_report/pg2_TeamOrganization/</loc>
          <lastmod>2025-05-04</lastmod>
          <changefreq>daily</changefreq>
@@ -47,11 +52,6 @@
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/subfolder/another-subfile/</loc>
-         <lastmod>2025-05-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://embedded-systems-design.github.io/template_report/subfolder/pg1_Welcome/</loc>
          <lastmod>2025-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
