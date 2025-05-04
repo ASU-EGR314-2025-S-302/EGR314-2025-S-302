@@ -23,19 +23,14 @@ We originally threw random ideas at the wall without considering too much if the
 
 ## Concept Sketch
 
-![12345](https://github.com/user-attachments/assets/7ad2168a-5f5a-40d9-9a41-f9579b61736d)
+![New New Concept Ideation](https://github.com/user-attachments/assets/548ffd32-2f5a-4145-9828-42e3be67ae20)
+
 
 ## Rationale
 
-The features highlighted in our design include concepts such as value recording and frequency, made easy to discern by the simple game mechanics showing how a device is able to recognize frequency. Users will try to replicate a frequency for a certain amount of time until the frequency range changes and an actuator moves forward. The actuator moves forward to a button that signals to the user that they have won the game. The game uses progressive difficulty levels as acceptable frequencies get narrower and narrower. Cues provided to make use of the device easier is a display showing what frequencies are acceptable and unacceptable to move forward. Controls will be the user's own voice as they aim to replicate the frequency they are designated by the display. The game will be comfortable and safe to play as the user will just be speaking at a mild volume into a microphone in order to play the game. The instructions needed for the exhibit will be explained in simple and concise bullet points. The exhibit is simple enough so that most of its use will be intuitive.
+The features highlighted in our design include concepts such as value recording, simple controls, and visual feedback. Users will try to match a random value for a certain amount of time until the value range changes and an actuator moves forward. The actuator moves forward to a button that signals to the user that they have won the game. Features that are provided to make use of the device easier is a display showing what number the user must try to match their value to in order to move forward aswell as LEDs that act as aditional progress indicators for the user. Controls will be two pushbuttons so that they can increase and decrease their stored number as well as start and reset the game. The game will be comfortable and safe to play as the user will be interacting with very simple controls and not be interacting with any potentially dangerous circuitry. The instructions needed for the exhibit will be explained on the digital display. The exhibit is simple enough so that most of its use will be intuitive. The design has changed a couple times over the course of development due to team and assebly issues. While not able to stick with the previous concepts for the exhibit, the general basis for functionality and the overall design for it to be a "minigame" remained fairly consistent. Previous versions of these concepts for the project can be found in the appendix.
 
 ## Presentation
 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/B_vrIuG8R5E" title="Team302" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Redesign
-
-Within a few weeks of our initial design, one of our team members was unfortunately removed from the class, leaving us with only three members. Due to this, we decided to lessen the scope of our project while keeping in mind the same principles we used for the old design. Our new design is mostly similar, except instead of doing a pitch/frequency game, we are changing it to a pressure gauge game, showcasing Boyle's Law as our STEM concept. The user will operate the plunger of a plastic syringe connected to an enclosed chamber which surrounds the pressure sensor. The board holding this sensor will set a goal pressure that the user will seek to reach by use of the syringe. An attached LED display will notify the user when they have reached the goal, and the game will stop. This design should be operable by a vast majority of users, and the quick, simple design will demonstrate Boyle's law.
-
-# Redesign Concept Sketch
-![New Concept Ideation drawio](https://github.com/user-attachments/assets/99eddc7f-36d3-4fdf-9388-6ac86ba80f0d)
