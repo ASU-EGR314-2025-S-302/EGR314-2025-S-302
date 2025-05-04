@@ -1,5 +1,5 @@
 ---
-Title: Appendix
+title: Appendix
 ---
 
 Insert old stuff
