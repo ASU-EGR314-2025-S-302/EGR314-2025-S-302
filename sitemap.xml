@@ -11,17 +11,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/template_report/ConceptIdeation/</loc>
-         <lastmod>2025-05-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://embedded-systems-design.github.io/template_report/appendix/</loc>
          <lastmod>2025-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://embedded-systems-design.github.io/template_report/pg2_TeamOrganization/</loc>
+         <lastmod>2025-05-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://embedded-systems-design.github.io/template_report/pg3_ConceptIdeation/</loc>
          <lastmod>2025-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
