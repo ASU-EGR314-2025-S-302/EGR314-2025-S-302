@@ -42,7 +42,7 @@ Engineering is just as much practical application as it is documentation. If a d
 
 ## 10. Organize Board Layout
 
-When designing a PCB board, it really helps to neatly organize where all your components are located on the board. This not only helps when drawing taces to limit the risk of crossing paths and the number of vias needed, but also for the actual placement of the hardware. Sometimes you may set up you footprints in a way that looks good but when you actually get the board, your OLED faces the wrong direction from the orientation you wanted, or the motor hangs off the incorrect side. In addition, you have to account for the actual size of components because some may have wider frams than drawn in the foot print, making it harder to solder on other components if that you already soldered the first in.
+When designing a PCB board, it really helps to neatly organize where all your components are located on the board. This not only helps when drawing traces to limit the risk of crossing paths and the number of vias needed, but also for the actual placement of the hardware. Sometimes you may set up your footprints in a way that looks good but when you actually get the board, your OLED faces the wrong direction from the orientation you wanted, or the motor hangs off the incorrect side. In addition, you have to account for the actual size of components because some may have wider frames than drawn in the footprint, making it harder to solder on other components if that you already soldered the first in.
 
 
 # Recommmendations for Future Students
