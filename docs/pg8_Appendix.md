@@ -8,6 +8,10 @@ Insert old stuff
 
 ![12345](https://github.com/user-attachments/assets/7ad2168a-5f5a-40d9-9a41-f9579b61736d)
 
+## Presentation of Concept Sketch V1
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/B_vrIuG8R5E" title="Team302" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Concept Sketch V2
 
 ![New Concept Ideation drawio](https://github.com/user-attachments/assets/99eddc7f-36d3-4fdf-9388-6ac86ba80f0d)
