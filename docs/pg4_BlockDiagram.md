@@ -97,4 +97,8 @@ Originally, we were going to send over a float that would represent the pressure
 
 There were originally an abundance of message types that would've been sent across the system, many of which did not make it into the final design. There were error messages, status messages, pressure messages, actuator state messages, and so on. As we learned more about board communication, we saw that many of these messages weren't necessary for system functionality. It was then turned into 4 messages to remove the clutter from the message cache to only send data relevant for each system.
 
-### 3. Shane Start
+### 3. Communication Flow
+
+Our original communication diagram was a lot more complicated given the various types of messages we were sending between our three boards, but as we reduced to two boards and fewer messages, we had to revise our process diagram to a much simpler one. The first iteration head a lot of messages being sent between each board for things like turning on certain systems such as lights and the Display. During revision, however, we found that we could reduce the number of messages as most of those processes could be self contained within our seperate programs.
+
+### 4. 
