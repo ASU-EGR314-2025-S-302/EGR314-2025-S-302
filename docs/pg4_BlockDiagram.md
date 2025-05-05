@@ -99,6 +99,12 @@ There were originally an abundance of message types that would've been sent acro
 
 ### 3. Communication Flow
 
-Our original communication diagram was a lot more complicated given the various types of messages we were sending between our three boards, but as we reduced to two boards and fewer messages, we had to revise our process diagram to a much simpler one. The first iteration head a lot of messages being sent between each board for things like turning on certain systems such as lights and the Display. During revision, however, we found that we could reduce the number of messages as most of those processes could be self contained within our seperate programs.
+Our original communication diagram was a lot more complicated given the various types of messages we were sending between our three boards, but as we reduced to two boards and fewer messages, we had to revise our process diagram to a much simpler one. The first iteration had a lot of messages being sent between each board for things like turning on certain systems such as lights and the Display. During revision, however, we found that we could reduce the number of messages as most of those processes could be self contained within our seperate programs.
 
-### 4. 
+### 4. SPI to I2C
+
+For the OLED, we had to use SPI in for communication between it and the microcontroller but SPI was rather difficult to work with in this context which became exceptionally more difficult with the use of the PIC microcontroller for the OLED subsystem. Beining unable to get the SPI OLED to turn on, we decided t0 switch over to a different OLED that utilizes I2C communication. The switch over to I2C was fairly easy and kept a reletively similar set up to the original SPI code. In addition, the rginal OLED had a lot more pins involved with programming it, while the new one only had two, so programming the pins in MPLab was a lot easier.
+
+### 5. Getting rid of Pressure sensor
+We unfortunately had to the the pressure sensor subsystem that we needed for our previous design. Without the sensor, we no longer need to program our boards to take in ATD inputs. To keep the style of our current game similar to the previous, we still kept the general code structure of our game the same as before, but instead we used simple digital imputs from pushbuttons to control the flow of the game instead of the input readings from the pressure sensor.
+
