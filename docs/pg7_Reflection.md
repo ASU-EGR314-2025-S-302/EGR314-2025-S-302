@@ -40,7 +40,9 @@ There is a lot of new information you are going to be learning in this class, an
 
 Engineering is just as much practical application as it is documentation. If a design fails, debug it as well as you can and track what errors arose to cause the failure and why. Even though your project has problems, awareness of the problems and working towards practical solutions shows deep understanding of the work in spite of failure.
 
-## 10. Something
+## 10. Organize Board Layout
+
+When designing a PCB board, it really helps to neatly organize where all your components are located on the board. This not only helps when drawing taces to limit the risk of crossing paths and the number of vias needed, but also for the actual placement of the hardware. Sometimes you may set up you footprints in a way that looks good but when you actually get the board, your OLED faces the wrong direction from the orientation you wanted, or the motor hangs off the incorrect side. In addition, you have to account for the actual size of components because some may have wider frams than drawn in the foot print, making it harder to solder on other components if that you already soldered the first in.
 
 
 # Recommmendations for Future Students
@@ -67,4 +69,4 @@ Engineering is just as much practical application as it is documentation. If a d
 
 # Version 2.0
 
-(Shane Help)
+In a version 2.0, one thing we could improve would be the ability to send variable types other than ones and zeros as characters. This would be an improvment because it opens up a whole new range of data that we can use to develop a more intricate system that can use things like the input data of a sensor. Curently our communication diagram only has us telling each other to turn systems on or off which works with our current design, but if we wanted to have the speed of the actuator change based on a range of float inputs, we could do that with our current architechture. To add this, all we would need is to modify our send and recieve functions to be able to format the message string in a way that we can still read the payload as its intended variabe type. Dividing up the code would be fairly simple as we would need to adjust the same functions within our own code. In addition, if add some a new device for inputs, we could add the code that handles the input data from it to the HMI system to be sent over to the actuator. To improve debuggability, we found that using LEDs as "Checkpoints" in code is a great way to tell where the code is at while its running as well as telling where it freezes or gets stuck. We can use this to debug our messaging structure by having an LED blink on certain actions such as: receiving a message, sending a message, or running a function based on a payload. This will help us isolate what parts of the code have issue so that we can adjust them as we test. Currently, we don't feel that there are any necessary peripherals needed to improve our current system except for some sort of sensor or microphone if we wanted to return to something similar to our previous designs. For our protocal design, we would modify it to account for a different range of values for inputs and adjust how our actuator moves and what information our OLED will display.
