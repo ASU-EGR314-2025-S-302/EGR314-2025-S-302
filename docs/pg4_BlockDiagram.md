@@ -105,6 +105,6 @@ Our original communication diagram was a lot more complicated given the various 
 
 For the OLED, we had to use SPI in for communication between it and the microcontroller but SPI was rather difficult to work with in this context which became exceptionally more difficult with the use of the PIC microcontroller for the OLED subsystem. Beining unable to get the SPI OLED to turn on, we decided t0 switch over to a different OLED that utilizes I2C communication. The switch over to I2C was fairly easy and kept a reletively similar set up to the original SPI code. In addition, the rginal OLED had a lot more pins involved with programming it, while the new one only had two, so programming the pins in MPLab was a lot easier.
 
-### 5. Getting rid of Pressure sensor
+### 5. Getting Rid of Pressure Sensor
 We unfortunately had to the the pressure sensor subsystem that we needed for our previous design. Without the sensor, we no longer need to program our boards to take in ATD inputs. To keep the style of our current game similar to the previous, we still kept the general code structure of our game the same as before, but instead we used simple digital imputs from pushbuttons to control the flow of the game instead of the input readings from the pressure sensor.
 
