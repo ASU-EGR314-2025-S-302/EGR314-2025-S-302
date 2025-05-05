@@ -2,7 +2,6 @@
 title: Appendix
 ---
 
-Insert old stuff
 
 ## Concept Sketch V1
 
