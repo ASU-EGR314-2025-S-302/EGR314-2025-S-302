@@ -8,7 +8,7 @@ tags:
 ## Hello, we are Team 302
 Welcome to our exhibit's website. Here you'll be able to see what we have been working on and our progress so far. Below, you can can see who is apart of the team as well as find our personal websites showing our individual work. 
 
-Our project is an interactive HMI system that acts as a sort of mini game. The controls for it consists of two pushbuttons that the user can use to play along side an OLED display that provides instructions about how the game works. The objective is to win a simple number matching game by using the buttons to increase or decrease a value. There are three LEDs are used to provide adittion feedback to the user and an actuator is used as a sort of progress bar that extends and hits the "win" button.
+Our project is an interactive HMI system that acts as a mini game. The controls for it consists of two pushbuttons that the user can use to play along side an OLED display that provides instructions about how the game works. The objective is to win a simple number matching game by using the buttons to increase or decrease a value. There are three LEDs that are used to provide additional feedback to the user and an actuator is used as a sort of progress bar that extends and hits the "win" button.
 
 ## Image of System
 ![IMG_5663](https://github.com/user-attachments/assets/1f0ceffa-6928-42a8-9292-84dbe1051548)
