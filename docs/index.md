@@ -22,9 +22,13 @@ Shane Duttenhefner | [OLED Display](https://shaneduttenhefner.github.io/)
 ## Content On this Website
 **Page** | **Link**
 ---------|---------
-Team Organization | [link](https://asu-egr314-2025-s-302.github.io/EGR314-2025-S-302/charts/)
-Ideation | [link](https://asu-egr314-2025-s-302.github.io/EGR314-2025-S-302/ConceptIdeation/)
-Block Diagram | [link](https://asu-egr314-2025-s-302.github.io/EGR314-2025-S-302/Block%20Diagram/)
+Team Organization | [link](https://asu-egr314-2025-s-302.github.io/EGR314-2025-S-302/pg2_TeamOrganization/)
+Ideation | [link](https://asu-egr314-2025-s-302.github.io/EGR314-2025-S-302/pg3_ConceptIdeation/)
+Block Diagram | [link](https://asu-egr314-2025-s-302.github.io/EGR314-2025-S-302/pg4_BlockDiagram/)
+Poster | [link](https://asu-egr314-2025-s-302.github.io/EGR314-2025-S-302/pg5_Poster/)
+Resources | [link](https://asu-egr314-2025-s-302.github.io/EGR314-2025-S-302/pg6_Resources/)
+Reflection | [link](https://asu-egr314-2025-s-302.github.io/EGR314-2025-S-302/pg7_Reflection/)
+Appendix | [link](https://asu-egr314-2025-s-302.github.io/EGR314-2025-S-302/pg8_Appendix/)
 
 - Date Started: 1/17/2025
 
